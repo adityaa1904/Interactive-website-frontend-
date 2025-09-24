@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #4b5563;
+    --background-light: #f3f4f6;
+    --text-dark: #1f2937;
+    --card-bg: #ffffff;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+.custom-button {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #1d4ed8; /* A darker shade of the primary color */
+}
+
+/* * Task 3: Responsive Design with Media Queries
+ * Although Tailwind CSS handles responsiveness with utility classes (e.g., md:text-left),
+ * this demonstrates how a traditional media query works.
+*/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Make header smaller on small screens */
+    }
+}
